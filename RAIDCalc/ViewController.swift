@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         DataManager.getJSONFileWithSuccess { (data) -> Void in
             // Get #1 app name using SwiftyJSON
             let json = JSON(data: data)
-            let driveSize = json["drives"][0].numberValue
+            let drives = json["drives"]
 
-            println("smallest drive is: \(driveSize)")
+            println("here are all of the harddrives: \(drives)")
             
         }
         
