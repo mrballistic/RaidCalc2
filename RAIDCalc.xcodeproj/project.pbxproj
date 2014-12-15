@@ -13,6 +13,9 @@
 		050453671A3F673C000DA5A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050453661A3F673C000DA5A7 /* Images.xcassets */; };
 		0504536A1A3F673C000DA5A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 050453681A3F673C000DA5A7 /* LaunchScreen.xib */; };
 		050453761A3F673C000DA5A7 /* RAIDCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050453751A3F673C000DA5A7 /* RAIDCalcTests.swift */; };
+		0508A9741A3F71720068A92B /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0508A96A1A3F710B0068A92B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0508A9771A3F74220068A92B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0508A9761A3F74220068A92B /* data.json */; };
+		0508A9791A3F75840068A92B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508A9781A3F75840068A92B /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,55 @@
 			remoteGlobalIDString = 050453591A3F673C000DA5A7;
 			remoteInfo = RAIDCalc;
 		};
+		0508A9691A3F710B0068A92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = SwiftyJSON;
+		};
+		0508A96B1A3F710B0068A92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = SwiftyJSONTests;
+		};
+		0508A96D1A3F710B0068A92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1C91A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSX;
+		};
+		0508A96F1A3F710B0068A92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1D31A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSXTests;
+		};
+		0508A9711A3F71450068A92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = SwiftyJSON;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0508A9731A3F715A0068A92B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0508A9741A3F71720068A92B /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0504535A1A3F673C000DA5A7 /* RAIDCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAIDCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +87,9 @@
 		0504536F1A3F673C000DA5A7 /* RAIDCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAIDCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050453741A3F673C000DA5A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		050453751A3F673C000DA5A7 /* RAIDCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAIDCalcTests.swift; sourceTree = "<group>"; };
+		0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = Carthage.checkout/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		0508A9761A3F74220068A92B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = data/data.json; sourceTree = "<group>"; };
+		0508A9781A3F75840068A92B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +113,7 @@
 		050453511A3F673C000DA5A7 = {
 			isa = PBXGroup;
 			children = (
+				0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */,
 				0504535C1A3F673C000DA5A7 /* RAIDCalc */,
 				050453721A3F673C000DA5A7 /* RAIDCalcTests */,
 				0504535B1A3F673C000DA5A7 /* Products */,
@@ -77,8 +132,10 @@
 		0504535C1A3F673C000DA5A7 /* RAIDCalc */ = {
 			isa = PBXGroup;
 			children = (
+				0508A9751A3F74010068A92B /* data */,
 				0504535F1A3F673C000DA5A7 /* AppDelegate.swift */,
 				050453611A3F673C000DA5A7 /* ViewController.swift */,
+				0508A9781A3F75840068A92B /* DataManager.swift */,
 				050453631A3F673C000DA5A7 /* Main.storyboard */,
 				050453661A3F673C000DA5A7 /* Images.xcassets */,
 				050453681A3F673C000DA5A7 /* LaunchScreen.xib */,
@@ -112,6 +169,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0508A9631A3F710A0068A92B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0508A96A1A3F710B0068A92B /* SwiftyJSON.framework */,
+				0508A96C1A3F710B0068A92B /* SwiftyJSONTests.xctest */,
+				0508A96E1A3F710B0068A92B /* SwiftyJSON.framework */,
+				0508A9701A3F710B0068A92B /* SwiftyJSONOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0508A9751A3F74010068A92B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0508A9761A3F74220068A92B /* data.json */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +198,12 @@
 				050453561A3F673C000DA5A7 /* Sources */,
 				050453571A3F673C000DA5A7 /* Frameworks */,
 				050453581A3F673C000DA5A7 /* Resources */,
+				0508A9731A3F715A0068A92B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0508A9721A3F71450068A92B /* PBXTargetDependency */,
 			);
 			name = RAIDCalc;
 			productName = RAIDCalc;
@@ -180,6 +258,12 @@
 			mainGroup = 050453511A3F673C000DA5A7;
 			productRefGroup = 0504535B1A3F673C000DA5A7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0508A9631A3F710A0068A92B /* Products */;
+					ProjectRef = 0508A9621A3F710A0068A92B /* SwiftyJSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				050453591A3F673C000DA5A7 /* RAIDCalc */,
@@ -187,6 +271,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0508A96A1A3F710B0068A92B /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0508A9691A3F710B0068A92B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0508A96C1A3F710B0068A92B /* SwiftyJSONTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONTests.xctest;
+			remoteRef = 0508A96B1A3F710B0068A92B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0508A96E1A3F710B0068A92B /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0508A96D1A3F710B0068A92B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0508A9701A3F710B0068A92B /* SwiftyJSONOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONOSXTests.xctest;
+			remoteRef = 0508A96F1A3F710B0068A92B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		050453581A3F673C000DA5A7 /* Resources */ = {
@@ -196,6 +311,7 @@
 				050453651A3F673C000DA5A7 /* Main.storyboard in Resources */,
 				0504536A1A3F673C000DA5A7 /* LaunchScreen.xib in Resources */,
 				050453671A3F673C000DA5A7 /* Images.xcassets in Resources */,
+				0508A9771A3F74220068A92B /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				050453621A3F673C000DA5A7 /* ViewController.swift in Sources */,
+				0508A9791A3F75840068A92B /* DataManager.swift in Sources */,
 				050453601A3F673C000DA5A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = 050453591A3F673C000DA5A7 /* RAIDCalc */;
 			targetProxy = 050453701A3F673C000DA5A7 /* PBXContainerItemProxy */;
+		};
+		0508A9721A3F71450068A92B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			targetProxy = 0508A9711A3F71450068A92B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +460,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage.build/iOS",
+				);
 				INFOPLIST_FILE = RAIDCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,6 +475,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage.build/iOS",
+				);
 				INFOPLIST_FILE = RAIDCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +538,7 @@
 				0504537B1A3F673C000DA5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0504537C1A3F673C000DA5A7 /* Build configuration list for PBXNativeTarget "RAIDCalcTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +547,7 @@
 				0504537E1A3F673C000DA5A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
