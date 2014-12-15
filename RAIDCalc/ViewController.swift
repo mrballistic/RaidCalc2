@@ -20,7 +20,21 @@ class ViewController: UIViewController {
             let json = JSON(data: data)
             let drives = json["drives"]
 
-            println("here are all of the harddrives: \(drives)")
+            
+            for item in drives {
+
+                
+                let thisDrive = item.1.double
+
+                
+                println(DataManager.cleanUpDataValue(thisDrive!))
+                
+                
+                
+            }
+            
+            
+          
             
         }
         
